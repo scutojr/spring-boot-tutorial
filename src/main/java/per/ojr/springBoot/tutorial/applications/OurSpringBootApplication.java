@@ -18,9 +18,9 @@ import per.ojr.springBoot.tutorial.configurations.DownStreamService;
 
 @SpringBootApplication(scanBasePackages = {"per.ojr.springBoot.tutorial"})
 @PropertySource(value = {
-        "my_first.properties",
-        "my_second.properties",
-        "downStreamService.properties"
+        "classpath:my_first.properties",
+        "classpath:my_second.properties",
+        "classpath:downStreamService.properties"
 }, encoding = "utf-8")
 public class OurSpringBootApplication implements ApplicationRunner {
 
